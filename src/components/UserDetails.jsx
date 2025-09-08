@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useContext } from "react";
-import { MyContext } from "../context/MyContext";
+import { MyContext } from "../Context/MyContext";
 
 function UserDetails() {
   const { id } = useParams();

@@ -8,11 +8,15 @@ function UserDetails() {
 
   // TODO: trova utente con id === Number(id)
   // const user = ...
+  const user = users.find((e) => e.id === Number(id));
 
   return (
     <div>
       <h2>Dettagli Utente</h2>
       {/* TODO: mostra nome, email, ecc */}
+      <p>Nome : {user.name}</p>
+      <p>Email: {user.email} </p>
+      <p>Telefono: {user.phone}</p>
     </div>
   );
 }
